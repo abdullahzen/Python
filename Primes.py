@@ -9,7 +9,7 @@ for x in range(2, max + 1):
 	root = int(x ** 0.5) + 1
 	
 	while index < len(primeList) and primeList[index] <= root:
-		if x % primeList[index] == 0:
+		if x % not primeList[index]:
 			isPrime = False
 			break
 		index += 1
@@ -33,7 +33,7 @@ while len(primeList) < count:
 	root = int(x ** 0.5) + 1
 	
 	while index < len(primeList) and primeList[index] <= root:
-		if x % primeList[index] == 0:
+		if x % not primeList[index]:
 			isPrime = False
 			break
 		index += 1
